@@ -25,10 +25,14 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="text-2xl font-extrabold tracking-wide flex items-center gap-2">
-            <FiCode className="text-blue-400" />
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">CodeLayer</span>
-            <span className="text-white">Studio</span>
-          </div>
+  <FiCode className="text-blue-400" />
+  <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">CodeLayer</span>
+  <span className="text-white">Studio</span>
+  <span className="text-xs md:text-sm italic text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 font-serif ml-2">
+    — By Prateek Mishra
+  </span>
+</div>
+
 
           {/* Contact Info */}
           <div className='text-sm text-gray-300'>
@@ -47,6 +51,7 @@ const Navbar = () => {
             <a href="/" className="flex items-center gap-1">
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">CodeLayer</span>
               <span className="text-white">Studio</span>
+            
             </a>
           </div>
 
