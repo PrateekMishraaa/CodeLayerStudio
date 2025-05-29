@@ -69,7 +69,7 @@ const Card = () => {
             >
               <div className="img">
                 <h3>{card.title}</h3>
-                <p>{card.description}</p>
+                <p className='text-sm'>{card.description}</p>
               </div>
             </div>
           ))}
@@ -143,59 +143,72 @@ const StyledWrapper = styled.div`
     font-weight: bold;
   }
 
-  .img h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
+ .img h3 {
+  font-size: clamp(0.8rem, 4vw, 1.4rem);
+  /* min 0.8rem, fluid up to 1.4rem */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-  .img p {
-    font-size: 0.95rem;
-    line-height: 1.3rem;
-  }
+.img p {
+  font-size: clamp(0.65rem, 3vw, 1rem);
+  /* min 0.65rem, fluid up to 1rem */
+  line-height: 1.3rem;
+}
+
 
   /* Responsive Styles */
   @media (max-width: 768px) {
     .inner {
       width: 180px;
-      height: 240px;
+      height: 500px;
     }
 
     .card {
       width: 180px;
-      height: 240px;
+      height: 500px;
       transform: rotateY(calc(var(--i) * var(--angle))) translateZ(350px);
     }
 
     .img h3 {
-      font-size: 1rem;
-    }
+  font-size: clamp(0.8rem, 4vw, 1.4rem);
+  /* min 0.8rem, fluid up to 1.4rem */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-    .img p {
-      font-size: 0.85rem;
-    }
-  }
+.img p {
+  font-size: clamp(0.65rem, 3vw, 1rem);
+  /* min 0.65rem, fluid up to 1rem */
+  line-height: 1.3rem;
+}
+
 
   @media (max-width: 480px) {
     .inner {
       width: 150px;
-      height: 200px;
+      height: 400px;
     }
 
     .card {
       width: 150px;
-      height: 200px;
+      height: 400px;
       transform: rotateY(calc(var(--i) * var(--angle))) translateZ(250px);
     }
 
     .img h3 {
-      font-size: 0.9rem;
-    }
+  font-size: clamp(0.8rem, 4vw, 1.4rem);
+  /* min 0.8rem, fluid up to 1.4rem */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-    .img p {
-      font-size: 0.75rem;
-    }
-  }
+.img p {
+  font-size: clamp(0.65rem, 3vw, 1rem);
+  /* min 0.65rem, fluid up to 1rem */
+  line-height: 1.3rem;
+}
+
 `;
 
 export default Card;
