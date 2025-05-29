@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar';
 import Developer from '../assets/developer.jpg';
 import Card from '../Components/FlipCards';
 import styled from 'styled-components';
+import Footer from '../Components/Footer';
 
 const HomePage = () => {
 
@@ -29,8 +30,8 @@ const HomePage = () => {
               Whether you're a startup or a growing business, we help you build impactful digital experiences.
             </p>
             <button
-              onClick={() => navigate('/contact')}
-              className="h-10 w-40 border-2 text-white rounded-2xl hover:bg-blue-900 transition bg-blue-600"
+              onClick={() => navigate('/contact-us')}
+              className="h-10 w-40  cursor-pointer text-white rounded-2xl hover:bg-blue-900 transition bg-blue-600"
             >
               Contact Me
             </button>
@@ -144,7 +145,7 @@ const HomePage = () => {
 </a>
 
 </section>
-
+<Footer/>
 
     </>
   );

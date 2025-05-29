@@ -52,7 +52,7 @@
                 <FiCode className="text-blue-400" />
                 <a href="/" className="flex items-center gap-1">
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">CodeLayer</span>
-                <span className="text-white">Studio</span>
+                <span className="text-white">Studio Pvt.Ltd</span>
                 </a>
             </div>
 
