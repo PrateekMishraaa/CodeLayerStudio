@@ -6,6 +6,7 @@ import Card from '../Components/FlipCards';
 import styled from 'styled-components';
 import Footer from '../Components/Footer';
 
+
 const HomePage = () => {
 
   const navigate = useNavigate();
@@ -100,6 +101,9 @@ const HomePage = () => {
               { title: 'Eyesome', url: 'https://eyesome-g.netlify.app/' },
               { title: 'SamarNiwas', url: 'https://samarniwasdehradun.com/' },
               { title: 'Brand Feedback Exchange', url: 'https://www.brandfeedbackexchange.com/' },
+                 { title: 'Laurent Banon Resort', url: 'https://laurentbanonresort.com/' },
+              { title: 'Mp Holidays', url: 'https://mpholidays.in/' },
+              { title: 'RamRaj Holidays', url: 'https://ramrajholidays.com/' },
             ].map((project, idx) => (
               <div className="flip-card" key={idx}>
                 <div className="flip-card-inner">
@@ -124,14 +128,14 @@ const HomePage = () => {
             ))}
           </StyledWrapper>
 
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <a
               href="/projects"
               className="inline-block h-10 w-72 border-2 border-white text-white justify-center py-2 font-semibold font-sans rounded-2xl hover:bg-blue-800 transition"
             >
               View All Projects
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
     <section className="bg-white w-full font-sans flex flex-col items-center justify-center py-10">

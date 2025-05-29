@@ -5,6 +5,9 @@ const Projects = () => {
   return (
   <>
   <Navbar/>
+  <section>
+    
+  </section>
   </>
   )
 }
