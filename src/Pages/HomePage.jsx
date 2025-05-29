@@ -2,8 +2,14 @@ import React from 'react';
 import Navbar from '../Components/Navbar';
 import Developer from '../assets/developer.jpg';
 import Card from '../Components/FlipCards'; // Assuming this is where you saved the above component
-
+import { useNavigate } from 'react-router-dom';
 const HomePage = () => {
+  const navigate = useNavigate();
+
+
+  const handleNavigate = () => {
+    navigate('/our-services')
+  }
   return (
     <>
       <Navbar />
@@ -48,8 +54,23 @@ const HomePage = () => {
             Services We Are Providing
           </p>
           <Card />
+          <button onClick={() => handleNavigate()} className='h-10 w-72 font-sans hover:bg-blue-900 rounded-2xl transition cursor-pointer border-1 border-gray-800'>View All Services</button>
         </div>
       </section>
+      <section className="w-full min-h-screen text-black px-6 py-4">
+        <div className="text-2xl font-sans font-bold px-[15%] w-full uppercase">
+          <p>Website Designing Company in Badarpur, South Delhi</p>
+        </div>
+        <div className="text-xl py-4 font-sans text-gray-800 px-[15%] ">
+          <p>
+            A website serves as a central hub for presenting your business or brand to the world. It allows users to gather, exchange, and interact with your information online. In today's digital era, having a responsive and well-designed website is essential for every business or service. With millions of people connecting online daily, a website boosts your visibility, credibility, and productivity on the World Wide Web. Ensure your business stands out with a powerful digital presence.
+          </p>
+          <p className='py-8 text-xl '>So call the <span className='font-bold'>Website Designing Company in Delhi</span> India for Website developing and designing services. We CodeLayer Studio are the best option for <span className='font-bold'>website designing, Website Development, WordPress development, ReactJs Website, NextJs Website, Dynamic Website as well as Cheap Web Hosting services in Delhi India. Now you can easily promote your business services in India with the help of our complete digital marketing services.  Our Company entirely focuses on creating a custom website, mobile-friendly, search engine services, and user-friendly.</span> Our expert implements all types of web development and design services for small businesses to a large scale of business. So, now contact us and join with your business in the online market as well as promote your services online worldwide.</p>
+       
+        </div>
+      </section>
+      <section className='bg-gray-900 h-screen w-full'></section>
+
     </>
   );
 };
