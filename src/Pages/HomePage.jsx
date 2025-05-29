@@ -94,76 +94,86 @@ const HomePage = () => {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <p className="title">FLIP CARD</p>
+                  <p className="title">Epicircle</p>
                   <p>Hover Me</p>
                 </div>
                 <div className="flip-card-back">
                   <p className="title">BACK</p>
                   <p>Leave Me</p>
+                  <a
+                    href="https://epicircle.earth/" // Replace with actual site
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 px-4 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-blue-100 transition"
+                  >
+                    View Website
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <p className="title">FLIP CARD</p>
-                  <p>Hover Me</p>
-                </div>
-                <div className="flip-card-back">
-                  <p className="title">BACK</p>
-                  <p>Leave Me</p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <p className="title">FLIP CARD</p>
-                  <p>Hover Me</p>
-                </div>
-                <div className="flip-card-back">
-                  <p className="title">BACK</p>
-                  <p>Leave Me</p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <p className="title">FLIP CARD</p>
-                  <p>Hover Me</p>
-                </div>
-                <div className="flip-card-back">
-                  <p className="title">BACK</p>
-                  <p>Leave Me</p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <p className="title">FLIP CARD</p>
-                  <p>Hover Me</p>
-                </div>
-                <div className="flip-card-back">
-                  <p className="title">BACK</p>
-                  <p>Leave Me</p>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <p className="title">FLIP CARD</p>
-                  <p>Hover Me</p>
-                </div>
-                <div className="flip-card-back">
-                  <p className="title">BACK</p>
-                  <p>Leave Me</p>
-                </div>
 
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <p className="title">Eyesome</p>
+                  <p>Hover Me</p>
+                </div>
+                <div className="flip-card-back">
+                  <p className="title">BACK</p>
+                  <p>Leave Me</p>
+                  <a
+                    href="https://eyesome-g.netlify.app/" // Replace with actual site
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 px-4 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-blue-100 transition"
+                  >
+                    View Website
+                  </a>
+                </div>
               </div>
             </div>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <p className="title">Eyesome</p>
+                  <p>Hover Me</p>
+                </div>
+                <div className="flip-card-back">
+                  <p className="title">BACK</p>
+                  <p>Leave Me</p>
+                  <a
+                    href="https://eyesome-g.netlify.app/" // Replace with actual site
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 px-4 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-blue-100 transition"
+                  >
+                    View Website
+                  </a>
+                </div>
+              </div>
+            </div>
+             <div className="flip-card">
+  <div className="flip-card-inner">
+    <div className="flip-card-front">
+      <p className="title">Eyesome</p>
+      <p>Hover Me</p>
+    </div>
+    <div className="flip-card-back">
+      <p className="title">BACK</p>
+      <p>Leave Me</p>
+      <a
+        href="https://eyesome-g.netlify.app/" // Replace with actual site
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 px-4 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-blue-100 transition"
+      >
+        View Website
+      </a>
+    </div>
+  </div>
+</div>
+
+
           </StyledWrapper>
         </div>
       </section>
@@ -188,9 +198,10 @@ const StyledWrapper = styled.div`
   }
 
   .title {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
+    border:2px solid red
     margin-bottom: 0.5rem;
   }
 
