@@ -105,14 +105,14 @@ const prices = [
           headers: { "Content-Type": "application/json" },
         }
       );
-
+      console.log(response)
       if (response.status === 200 || response.status === 201) {
         toast.success("Order submitted successfully!");
         closeModal();
         setTimeout(() => navigate("/"), 2000);
       }
     } catch (error) {
-      toast.error("Oops! Something went wrong.");
+      toast.error("Oops! Something went wrong.",error);
       console.error(error);
     }
   };
