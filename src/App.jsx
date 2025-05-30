@@ -6,6 +6,7 @@ import Price from "./Pages/Price.jsx"
 // import Projects from "./Pages/Projects.jsx"
 import Contact from "./Pages/Contact.jsx"
 import Services from './Pages/Services.jsx'
+import AllPrice from './Pages/AllPrice.jsx'
 const App = () => {
   return (
  <>
@@ -17,6 +18,7 @@ const App = () => {
       <Route path='/our-services' element={<Services/>}/>
       <Route path='/packages' element={<Price/>}/>
       <Route path='/contact-us' element={<Contact/>}/>
+      <Route path='/Prices' element={<AllPrice/>}/>
     </Routes>
   </Router>
  </>

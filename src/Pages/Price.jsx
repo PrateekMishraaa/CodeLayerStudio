@@ -88,33 +88,27 @@ const prices = [
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
- const handleSubmit = async (e) => {
-  e.preventDefault();
-  const { FullName, Email, PhoneNumber, Message } = formData;
-
-  if (!FullName || !Email || !PhoneNumber || !Message) {
-    toast.error("All fields are required");
-    return;
+const handleSubmit =async(e)=>{
+  e.preventDefault()
+  if(!formData.FullName || !formData.Email || !formData.PhoneNumber || !formData.Message){
+    toast.error("All fields are required")
   }
-
-  try {
-    const response = await axios.post(
-      "https://codelayerstudiobackend.onrender.com",
-      formData,
-      {
-        headers: { "Content-Type": "application/json" },
-      }
-    );
-    if (response.status === 200 || response.status === 201) {
-      toast.success("Order submitted successfully!");
-      closeModal();
-      setTimeout(() => navigate("/"), 2000);
-    }
-  } catch (error) {
-    toast.error("Oops! Something went wrong.");
-    console.error(error);
+  try{
+      const response = await axios.post("https://codelayerstudiobackend.onrender.com/",formData,{
+        "headers":{
+          "Content-Type":"application/json"
+        }
+      })
+      console.log(response)
+      toast.success("Your order has been placed | Thankyou")
+      setTimeout(()=>{
+        navigate('/')
+      },2000)
+  }catch(error){
+    console.log(error)
+    toast.error("Failed to Placed Order")
   }
-};
+}
 
 
   return (
@@ -154,6 +148,7 @@ const prices = [
               </div>
             );
           })}
+          <a href="/Prices" className="h-10 w-20 border-2 bg-blue-900 hover:bg-blue-600 transition font-sans text-white font-semibold p-2 rounded-xl">View All</a>
         </div>
       </section>
 
