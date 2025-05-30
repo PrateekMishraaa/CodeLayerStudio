@@ -5,8 +5,10 @@ import Footer from '../Components/Footer';
 import { FiCode } from 'react-icons/fi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {useNavigate} from "react-router-dom"
 import axios from "axios"
 const Price = () => {
+  const navigate = useNavigate()
   const [formData,SetFormData] = useState({
     FullName:"",
     Email:"",
@@ -98,7 +100,7 @@ const Price = () => {
   try {
     // Send POST request to the server
     const response = await axios.post(
-      "http://localhost:4000/api/order",
+      "https://codelayerstudiobackend.onrender.com/order",
       formData,
       {
         headers: {
@@ -111,13 +113,16 @@ const Price = () => {
     if (response.status === 201 || response.status === 200) {
       toast.success("Order submitted successfully!");
       // Optional: Reset form
-      setFormData({
+      SetFormData({
         FullName: "",
         Email: "",
         PhoneNumber: "",
         Message: ""
       });
     }
+    setTimeout(()=>{
+      navigate("/")
+    },2000)
   } catch (error) {
     console.error(error);
     toast.error("Ooops! Something went wrong");

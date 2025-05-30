@@ -5,8 +5,7 @@ import Developer from '../assets/developer.jpg';
 import Card from '../Components/FlipCards';
 import styled from 'styled-components';
 import Footer from '../Components/Footer';
-
-
+import { FaWhatsapp } from "react-icons/fa";
 const HomePage = () => {
 
   const navigate = useNavigate();
@@ -90,7 +89,7 @@ const HomePage = () => {
           </p>
         </div>
       </section>
-
+    <a href=""><FaWhatsapp className='text-2xl text-green-600'/></a>
       {/* Professional Works Section */}
       <section className="bg-gray-900 text-white px-6 py-16">
         <div className="max-w-6xl mx-auto text-center">

@@ -38,8 +38,12 @@ const Navbar = () => {
 
                     {/* Contact Info */}
                     <div className='hidden md:block text-sm text-gray-300'>
-                        Contact: <a href="mailto:pm921670@gmail.com" className="text-blue-400 hover:underline">pm921670@gmail.com</a>
+                        Contact_Email: <a href="mailto:pm921670@gmail.com" className="text-blue-400 hover:underline">pm921670@gmail.com</a>
                     </div>
+                      <div className='hidden md:block text-sm text-gray-300'>
+                        Contact_No: <a href="tel:9540802061" className="text-blue-400 hover:underline">9540802061</a>
+                    </div>
+                    
                 </div>
             </nav>
 
@@ -88,6 +92,9 @@ const Navbar = () => {
                         </ul>
                         <div className="mt-6 text-sm italic text-cyan-300 text-center font-serif">
                             — By Prateek Mishra
+                        </div>
+                         <div className="mt-6 text-sm italic text-cyan-300 text-center font-serif">
+                        <a href="tel:9540802061">Contact_No :<span>9540802061</span></a>
                         </div>
                     </div>
                 )}
