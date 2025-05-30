@@ -88,34 +88,34 @@ const prices = [
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const { FullName, Email, PhoneNumber, Message } = formData;
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  const { FullName, Email, PhoneNumber, Message } = formData;
 
-    if (!FullName || !Email || !PhoneNumber || !Message) {
-      toast.error("All fields are required");
-      return;
-    }
+  if (!FullName || !Email || !PhoneNumber || !Message) {
+    toast.error("All fields are required");
+    return;
+  }
 
-    try {
-      const response = await axios.post(
-        "https://codelayerstudiobackend.onrender.com",
-        formData,
-        {
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      console.log(response)
-      if (response.status === 200 || response.status === 201) {
-        toast.success("Order submitted successfully!");
-        closeModal();
-        setTimeout(() => navigate("/"), 2000);
+  try {
+    const response = await axios.post(
+      "https://codelayerstudiobackend.onrender.com/api/order",
+      formData,
+      {
+        headers: { "Content-Type": "application/json" },
       }
-    } catch (error) {
-      toast.error("Oops! Something went wrong.",error);
-      console.error(error);
+    );
+    if (response.status === 200 || response.status === 201) {
+      toast.success("Order submitted successfully!");
+      closeModal();
+      setTimeout(() => navigate("/"), 2000);
     }
-  };
+  } catch (error) {
+    toast.error("Oops! Something went wrong.");
+    console.error(error);
+  }
+};
+
 
   return (
     <>
