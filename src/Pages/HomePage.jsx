@@ -23,7 +23,7 @@ const HomePage = () => {
         <div className="absolute bottom-10 left-0 w-full px-6 flex justify-center">
           <div className="bg-blue-200 bg-opacity-60 p-6 rounded-lg max-w-4xl text-center shadow-lg">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Welcome to CodeLayer-Studio Company
+              Welcome to CodeLayer-Studio Pvt Ltd
             </h1>
             <p className="text-gray-800 text-base md:text-lg mb-4">
               We turn ideas into reality through clean code, creativity, and innovation.
