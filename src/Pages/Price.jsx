@@ -99,7 +99,7 @@ const prices = [
 
     try {
       const response = await axios.post(
-        "https://codelayerstudiobackend.onrender.com/",
+        "https://codelayerstudiobackend.onrender.com",
         formData,
         {
           headers: { "Content-Type": "application/json" },
