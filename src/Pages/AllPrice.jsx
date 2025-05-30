@@ -36,9 +36,9 @@ const AllPrice = () => {
                         className="absolute inset-0 h-full w-full object-cover opacity-60"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <h1 className="text-3xl sm:text-4xl font-extrabold text-white bg-gradient-to-r from-blue-700 to-cyan-500 px-4 py-2 rounded shadow-lg">
+                        <h2 className="text-3xl sm:text-4xl font-extrabold text-white bg-gradient-to-r from-blue-700 to-cyan-500 px-4 py-2 rounded shadow-lg">
                             All Website Design & Development Prices
-                        </h1>
+                        </h2>
                     </div>
                 </div>
 
