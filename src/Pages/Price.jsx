@@ -100,7 +100,7 @@ const Price = () => {
   try {
     // Send POST request to the server
     const response = await axios.post(
-      "https://codelayerstudiobackend.onrender.com/api/order",
+      "https://codelayerstudiobackend.onrender.com/order",
       formData,
       {
         headers: {
