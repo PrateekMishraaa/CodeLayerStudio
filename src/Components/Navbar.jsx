@@ -65,9 +65,11 @@ const Navbar = () => {
                         <li><a href="/" className="hover:text-cyan-400 transition-colors">Home</a></li>
                         <li><a href="/about" className="hover:text-cyan-400 transition-colors">About</a></li>
                         <li><a href="/packages" className="hover:text-cyan-400 transition-colors">Packages</a></li>
+                        <li><a href="/technologies" className='hover:text-cyan-400 transition-colors'>Technologies</a></li>
                         <li><a href="/our-services" className="hover:text-cyan-400 transition-colors">Services</a></li>
                         {/* <li><a href="/projects" className="hover:text-cyan-400 transition-colors">Projects</a></li> */}
                         <li><a href="/contact-us" className="hover:text-cyan-400 transition-colors">Contact Me</a></li>
+                        <li><a href="/signup" className="hover:text-cyan-300">SignUp</a></li>
                     </ul>
 
                     {/* Hamburger Icon */}
@@ -86,9 +88,11 @@ const Navbar = () => {
                             <li><a href="/" className="hover:text-cyan-300">Home</a></li>
                             <li><a href="/about" className="hover:text-cyan-300">About</a></li>
                             <li><a href="/packages" className="hover:text-cyan-300">Packages</a></li>
+                              <li><a href="/technologies" className='hover:text-cyan-400 transition-colors'>Technologies</a></li>
                             <li><a href="/our-services" className="hover:text-cyan-300">Services</a></li>
-                            {/* <li><a href="/projects" className="hover:text-cyan-300">Projects</a></li> */}
+                           
                             <li><a href="/contact-us" className="hover:text-cyan-300">Contact Me</a></li>
+                             <li><a href="/signup" className="hover:text-cyan-300">SignUp</a></li>
                         </ul>
                         <div className="mt-6 text-sm italic text-cyan-300 text-center font-serif">
                             — By Prateek Mishra
