@@ -29,7 +29,7 @@ const handleSubmit=async(e)=>{
         toast.error("All fields are required")
     }
     try{
-        const response = await axios.post("https://codelayerstudiobackend.onrender.com/signup",formData,{
+        const response = await axios.post("https://codelayerstudiobackend.onrender.com/api/signup",formData,{
             "headers":{
                 "Content-Type":"application/json"
             }
