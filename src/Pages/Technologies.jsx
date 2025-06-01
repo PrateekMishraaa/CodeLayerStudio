@@ -1,25 +1,30 @@
-import React from 'react'
-import Navbar from '../Components/Navbar'
-import Dev from "../assets/dev.jpg"
+import React from 'react';
+import Navbar from '../Components/Navbar';
+import Dev from '../assets/dev.jpg';
 
 const Technologies = () => {
-    return (
-        <>
-            <Navbar />
-            <section className='h-[82vh] w-full border-2'>
-                <img src={Dev} alt="Developer" className='h-full w-full object-cover' />
-            </section>
+  return (
+    <>
+      <Navbar />
 
-            {/* Technologies Section */}
-            <section className='min-h-screen w-full bg-gray-50 py-16 px-6 md:px-20'>
-                <h2 className='text-4xl font-sans text-blue-900 font-bold text-center mb-12'>
-                    Technologies We Use
-                </h2>
-            <p>We Are Providing best web services ever </p>
-               
-            </section>
-        </>
-    )
-}
+      {/* Hero Image Section */}
+      <section className="h-[82vh] w-full border-b-2 border-gray-200">
+        <img src={Dev} alt="Developer" className="h-full w-full object-cover" />
+      </section>
 
-export default Technologies
+      {/* Technologies Section */}
+      <section className="min-h-screen w-full bg-gray-50 py-16 px-6 md:px-20">
+        <h2 className="text-4xl font-sans text-blue-900 font-bold text-center mb-8">
+          Technologies We Use
+        </h2>
+        <p className="text-center text-gray-700 max-w-xl mx-auto mb-16">
+          We are providing the best web services ever.
+        </p>
+
+        
+      </section>
+    </>
+  );
+};
+
+export default Technologies;
