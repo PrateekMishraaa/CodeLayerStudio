@@ -39,7 +39,8 @@ const Contact = () => {
       setFormData({ FullName: "", Email: "", PhoneNumber: "", Message: "" });
 
     } catch (error) {
-      toast.error("Something went wrong");
+      console.log(error)
+      toast.error("Something went wrong",error);
     } finally {
       setLoading(false);
     }
