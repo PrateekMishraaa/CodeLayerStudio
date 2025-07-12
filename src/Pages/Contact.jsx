@@ -34,7 +34,7 @@ const Contact = () => {
   },
 });
 
-      setFormData(response)
+      // setFormData(response)/
       toast.success("Form has been submitted!");
       setFormData({ FullName: "", Email: "", PhoneNumber: "", Message: "" });
 
