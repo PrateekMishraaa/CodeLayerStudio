@@ -28,7 +28,7 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("https://codelayerstudiobackend.onrender.com/contact-us", formData, {
+      const response = await axios.post("https://codelayerstudiobackend.onrender.com", formData, {
         headers: {
           "Content-Type": "application/json",
         },
