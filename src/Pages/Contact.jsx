@@ -28,14 +28,16 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("https://codelayerstudiobackend.onrender.com", formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+  await axios.post("https://codelayerstudiobackend.onrender.com/api/contact-us", formData, {
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
       setFormData(response)
       toast.success("Form has been submitted!");
       setFormData({ FullName: "", Email: "", PhoneNumber: "", Message: "" });
+
     } catch (error) {
       toast.error("Something went wrong");
     } finally {
