@@ -16,6 +16,22 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
+           <section className="bg-gray-900 text-white px-6 py-16">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-800 to-cyan-400 text-transparent bg-clip-text mb-6">
+           Welcome to CodeLayerStudio Pvt Ltd
+          </h2>
+          <Card />
+          <div className="mt-6">
+            <button
+              onClick={handleNavigate}
+              className="h-10 w-72 bg-transparent border border-white text-white rounded-2xl hover:bg-blue-800 transition"
+            >
+              View All Services
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* Hero Section */}
       <section className="relative h-screen w-full">
@@ -23,7 +39,7 @@ const HomePage = () => {
         <div className="absolute bottom-10 left-0 w-full px-6 flex justify-center">
           <div className="bg-blue-200 bg-opacity-60 p-6 rounded-lg max-w-4xl text-center shadow-lg">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Welcome to CodeLayer-Studio Pvt Ltd
+              {/* Welcome to CodeLayer-Studio Pvt Ltd */}
             </h1>
             <p className="text-gray-800 text-base md:text-lg mb-4">
               We turn ideas into reality through clean code, creativity, and innovation.
@@ -56,7 +72,7 @@ const HomePage = () => {
       </section>
 
       {/* Services Section */}
-      <section className="bg-gray-900 text-white px-6 py-16">
+      {/* <section className="bg-gray-900 text-white px-6 py-16">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-800 to-cyan-400 text-transparent bg-clip-text mb-6">
             Services We Are Providing
@@ -71,7 +87,7 @@ const HomePage = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Location Info Section */}
       <section className="bg-white px-6 py-16">

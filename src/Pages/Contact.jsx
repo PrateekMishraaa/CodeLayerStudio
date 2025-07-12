@@ -33,6 +33,7 @@ const Contact = () => {
           "Content-Type": "application/json",
         },
       });
+      setFormData(response)
       toast.success("Form has been submitted!");
       setFormData({ FullName: "", Email: "", PhoneNumber: "", Message: "" });
     } catch (error) {
