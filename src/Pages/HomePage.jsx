@@ -105,11 +105,11 @@ const HomePage = () => {
           </p>
         </div>
       </section>
-    <a href=""><FaWhatsapp className='text-2xl text-green-600'/></a>
+    <a href="whatsapp:contact=9540802061@s.whatsapp.com&message= I'd like to chat with you"><FaWhatsapp className='text-5xl text-green-600'/></a>
       {/* Professional Works Section */}
       <section className="bg-gray-900 text-white px-6 py-16">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-12">Our Professional Works</h2>
+          <h2 className="text-3xl font-bold mb-12 ">Our Professional Works</h2>
           <StyledWrapper>
             {[
               { title: 'Epicircle', url: 'https://epicircle.earth/' },
@@ -120,7 +120,7 @@ const HomePage = () => {
               { title: 'Mp Holidays', url: 'https://mpholidays.in/' },
               { title: 'RamRaj Holidays', url: 'https://ramrajholidays.com/' },
             ].map((project, idx) => (
-              <div className="flip-card" key={idx}>
+              <div className="flip-card cursor-pointer" key={idx}>
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <p className="title tracking-wide uppercase">{project.title}</p>
